@@ -32,7 +32,7 @@ export class Parking extends Component {
   render() {
     return (
       <div className="container" style={{ height: "80%", marginTop: "2rem" }}>
-        <div className="grid-4 ">
+        <div className="grid-3 ">
           {this.state.slots.map(item => (
             <Slot key={item.id} slot={item} onChangeColor={this.handleChange} />
           ))}
